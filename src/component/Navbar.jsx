@@ -1,7 +1,7 @@
 import Logo from "../assets/images/logo-bookmark.svg";
 const Navbar = () => {
   return (
-    <navbar className="flex  justify-between p-10">
+    <navbar className="flex  justify-between px-40 py-10">
         <div>
           <img src={Logo}></img>
         </div>
@@ -15,7 +15,7 @@ const Navbar = () => {
           <a to="/contact" className="uppercase hover:text-red-500 cursor-pointer">
             Contact
           </a>
-          <a to="/login" className="uppercase hover:text-red-500 cursor-pointer border-2 w-30">
+          <a to="/login" className="uppercase hover:text-red-500 cursor-pointer w-20 border border-black text-center shadow-md hover:border-red-500">
             Login
           </a>
         </div>
