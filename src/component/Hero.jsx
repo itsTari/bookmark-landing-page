@@ -11,7 +11,7 @@ const Hero = () => {
             </div>
         </div>
         <div className="flex-left relative ">
-            <div className='bg-blue-800 w-96 h-60 rounded-bl-3xl place-self-end absolute top-60 right-0 z-0'></div>
+            {/* <div className='bg-blue-800 w-96 h-60 rounded-bl-3xl place-self-end absolute top-60 right-0 z-0'></div> */}
             <img className='z-40' src={Herobg}/>
         </div>
     </section>

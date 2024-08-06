@@ -3,6 +3,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Main from './Layout/Main'
 import Hero from "./component/Hero";
 import Features from "./component/Features";
+import ExtentionsDisplay from "./component/ExtentionsDisplay";
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -15,6 +16,7 @@ function App() {
     <RouterProvider router={router}/>
     <Hero/>
     <Features/>
+    <ExtentionsDisplay/>
     
     </>
   );
