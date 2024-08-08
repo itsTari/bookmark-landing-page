@@ -4,6 +4,7 @@ import Main from './Layout/Main'
 import Hero from "./component/Hero";
 import Features from "./component/Features";
 import ExtentionsDisplay from "./component/ExtentionsDisplay";
+import Faq from "./component/Faq";
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -17,6 +18,7 @@ function App() {
     <Hero/>
     <Features/>
     <ExtentionsDisplay/>
+    <Faq/>
     
     </>
   );
