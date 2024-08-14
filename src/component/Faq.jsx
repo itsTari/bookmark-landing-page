@@ -7,7 +7,7 @@ const Faq = () => {
         setActive((prevId) => (prevId === id ? null : id));
        };
   return (
-    <section className="flex items-center  flex-col gap-10" >
+    <section className="flex items-center  flex-col gap-10 py-20" >
         <h1 className="text-2xl sm:text-5xl">Frequently asked question</h1>
         <p className="w-full sm:w-1/2 text-center"> Here are some of our FAQ's. if you have any other questions you'd like answered please feel free to email us. </p>
         <div className='w-full sm:w-1/2'>

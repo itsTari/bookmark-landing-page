@@ -1,7 +1,11 @@
 import Herobg from '../assets/images/illustration-hero.svg'
+import Features from './Features'
+import ExtentionsDisplay from './ExtentionsDisplay'
+import Faq from './Faq'
 const Hero = () => {
   return (
-    <section className='flex pt-20'>
+    <>
+      <section className='flex pt-20'>
         <div className='px-20'>
             <h1 className="capitalize text-6xl">a simple bookmark manager</h1>
             <p className='pt-10'> A clean and simple way interface to organize your favorite <br/>website. Open a new browser tab and see your site load <br/> instantly. Try it for free </p>
@@ -15,6 +19,11 @@ const Hero = () => {
             <img className='z-40' src={Herobg}/>
         </div>
     </section>
+    <Features/>
+    <ExtentionsDisplay/>
+    <Faq/>
+    </>
+    
   )
 }
 
