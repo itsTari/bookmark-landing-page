@@ -16,7 +16,7 @@ const nav = () => {
           <NavLink to="/contact" className="uppercase hover:text-red-500 cursor-pointer">
             Contact
           </NavLink>
-          <NavLink to="/login" className="uppercase hover:text-red-500 cursor-pointer w-20 border border-black text-center shadow-md hover:border-red-500">
+          <NavLink to="/login" className="uppercase hover:text-red-500  cursor-pointer w-24 rounded border-2 bg-red-500 text-white hover:text-black hover:bg-transparent border-red-500 text-center shadow-md hover:border-red-500">
             Login
           </NavLink>
         </div>
