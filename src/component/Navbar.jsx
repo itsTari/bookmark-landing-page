@@ -1,12 +1,19 @@
 import Logo from "../assets/images/logo-bookmark.svg";
+import Menu from '../assets/images/icon-hamburger.svg'
 import { NavLink} from "react-router-dom";
-const nav = () => {
+import Sidebar from "./Sidebar";
+import { useState } from "react";
+const Navbar = () => {
+  const [sidebar, setSidebar] = useState(false)
   return (
-    <nav className="flex  justify-between px-40 py-10">
+    <nav className="flex  items-center  justify-between px-10 sm:px-40 py-10">
         <div>
           <img src={Logo}></img>
         </div>
-        <div className="flex gap-10 ">
+        <button onClick={()=>setSidebar(true)} className="sm:hidden">
+          <img src={Menu}/>
+        </button>
+        <div className="flex gap-10 hidden sm:flex">
           <NavLink to="/feature" className="uppercase hover:text-red-500 cursor-pointer ">
             feature
           </NavLink>
@@ -20,8 +27,9 @@ const nav = () => {
             Login
           </NavLink>
         </div>
+        <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>
       </nav>
   )
 }
 
-export default nav
+export default Navbar
