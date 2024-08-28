@@ -2,7 +2,7 @@ import Logo from "../assets/images/logo-bookmark.svg";
 import Menu from '../assets/images/icon-hamburger.svg'
 import { NavLink} from "react-router-dom";
 import Sidebar from "./Sidebar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false)
   return (

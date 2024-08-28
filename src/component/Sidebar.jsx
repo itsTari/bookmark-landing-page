@@ -5,10 +5,10 @@ import Twitter from '../assets/images/icon-twitter.svg'
 import { NavLink } from "react-router-dom";
 const Sidebar = ({sidebar, setSidebar}) => {
   return (
-    sidebar && <div className="bg-blue-900 absolute p-10 top-0 left-0 w-full h-100vh sm:hidden z-10 opacity-95">
+    sidebar && <div className="bg-blue-900 fixed p-10 top-0 left-0 w-full h-dvh sm:hidden z-10 opacity-95">
       <div className="flex justify-between">
         <img src={Logo}/>
-        <buton><img src={Close}/></buton>
+        <button onClick={()=>setSidebar(false)}><img src={Close}/></button>
       </div>
       <div className="flex flex-col items-center pt-20 gap-10 text-white">
           <NavLink to="/feature" className="uppercase hover:text-red-500">
@@ -20,7 +20,7 @@ const Sidebar = ({sidebar, setSidebar}) => {
           <NavLink to="/contact" className="uppercase hover:text-red-500">
             Contact
           </NavLink>
-          <NavLink to="/login" className="uppercase hover:text-black w-full rounded border-2 bg-transparent text-white  hover:bg-white border-white text-center">
+          <NavLink to="/login" className="uppercase hover:text-black w-full py-2 rounded border-2 bg-transparent text-white  hover:bg-white border-white text-center">
             Login
           </NavLink>
         </div>

@@ -9,8 +9,8 @@ const Features = () => {
   return (
     <section className="flex items-center  flex-col gap-10 py-40" >
         <h1 className="text-3xl sm:text-5xl">Features</h1>
-        <p className="w-full sm:w-1/2 text-center">our aim is to make it quick and easy for you to access your <br/> favourite websites. Your bookmark sync between your devices <br/> so you can access them on the go</p>
-        <div className="flex gap-10 py-20">
+        <p className="w-full sm:w-1/2 text-center px-10">our aim is to make it quick and easy for you to access your <br className="hidden sm:block"/> favourite websites. Your bookmark sync between your devices <br className="hidden sm:block"/> so you can access them on the go</p>
+        <div className="flex flex-col sm:flex-row gap-10 py-20">
             <button onClick={()=> setDisplay('SimpleBookmark')} className={display === 'SimpleBookmark' ? "border-b-2 border-red-500 hover:text-red-500 h-10 w-60 text-center shadow-md" :"hover:text-red-500 h-10 w-60 text-center shadow-md" }>Simple Bookmarking</button>
             <button onClick={()=> setDisplay('SpeedySearching')} className={display === 'SpeedySearching' ? 'border-b-2 border-red-500 hover:text-red-500 h-10 w-60 text-center shadow-md'  :'hover:text-red-500 h-10 w-60 text-center shadow-md'}>Speedy Searching</button>
             <button onClick={()=> setDisplay('EasySharing')} className={display === 'EasySharing' ? 'border-b-2 border-red-500 hover:text-red-500 h-10 w-60 text-center shadow-md'  :'hover:text-red-500 h-10 w-60 text-center shadow-md'}>Easy Sharing</button>
