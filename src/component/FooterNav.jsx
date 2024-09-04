@@ -4,8 +4,8 @@ import FaceBook from '../assets/images/icon-facebook.svg'
 import Twitter from '../assets/images/icon-twitter.svg'
 const FooterNav = () => {
   return (
-    <footer className="flex flex-col sm:flex-row justify-between py-5 px-5 sm:px-40 gap-5  bg-blue-900 text-white">
-        <div className="flex gap-7 sm:gap-10 text-sm">
+    <footer className="flex sm:flex-row flex-col justify-between py-5 items-center text-center sm:px-40 gap-10 bg-blue-900 text-white">
+        <div className="flex flex-col sm:flex-row gap-7 sm:gap-10 text-sm">
          <img src={Logo}></img>
           <NavLink to="/feature" className="uppercase hover:text-red-500 cursor-pointer ">
             feature
